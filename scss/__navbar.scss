@@ -1,0 +1,31 @@
+.topNav {
+  height: 51px;
+  display: flex;
+  justify-content: center;
+}
+.topNav a {
+  align-items: center;
+  font-weight: 700;
+  font-size: 14px;
+  overflow: hidden;
+  padding-top: 20px;
+}
+.topNav:first-child {
+  border-bottom: 3px solid #ef5b70;
+}
+.topNav a:hover {
+  border-bottom: 3px solid #ef5b70;
+  opacity: 70% !important;
+  text-decoration: none;
+}
+.topNav a.active {
+  border-bottom: 3px solid #ef5b70;
+}
+.topNav a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #222222;
+}
+.topNav a:not(:last-child) {
+  margin-right: 46px;
+}

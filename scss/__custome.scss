@@ -7,46 +7,37 @@
   text-transform: uppercase;
   margin-top: 73px;
 }
-
 .carousel-indicators li {
   width: 63px;
   height: 3px;
   border: 1px solid #eaeaea;
 }
-
 .carousel-control-arrow {
   width: 47px;
   height: 47px;
   background-color: #2a2a2a;
   margin: auto;
 }
-
 .carousel-inner {
   width: 597px;
   height: 724px;
   margin: 0 auto;
 }
-
 .topNav a:hover {
   border-bottom: 3px solid #ef5b70;
   opacity: 70% !important;
   text-decoration: none;
 }
-
 .color_s {
   width: 144px;
   height: 35px;
   border: 1px solid #eaeaea;
   background-color: #ffffff;
-  -webkit-box-pack: left;
-      -ms-flex-pack: left;
-          justify-content: left;
+  justify-content: left;
 }
-
 .color_dropdown {
   border: 1px solid #eaeaea;
 }
-
 .btn {
   text-align: left;
   color: #bcbcbc;
@@ -54,7 +45,6 @@
   font-weight: 400;
   line-height: 24px;
 }
-
 .form-control {
   text-align: left;
   color: #bcbcbc;
@@ -62,4 +52,3 @@
   font-weight: 200;
   line-height: 24px;
 }
-/*# sourceMappingURL=custom.css.map */
