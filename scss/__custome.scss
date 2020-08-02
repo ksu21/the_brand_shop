@@ -1,6 +1,8 @@
+$colorButtonMain: #f16d7f;
+$colorHeadlineText: #f16d7f;
 .carousel_h {
   height: 10px;
-  color: #f16d7f;
+  color: $colorHeadlineText;
   font-size: 14px;
   font-weight: 700;
   line-height: 24px;
