@@ -5,11 +5,11 @@ $colorHeadlineText: #f16d7f;
     display: flex;
     flex-direction: row;
     .menu_left {
-        width: 243px;
-        height: 598px;
+        width: 250px;
 
         details {
             margin-top: 18px;
+            outline: none;
         }
         details summary::-webkit-details-marker {
             display: none;
@@ -30,6 +30,7 @@ $colorHeadlineText: #f16d7f;
             position: absolute;
             right: 0px;
             top: 10px;
+            outline: none;
         }
 
         /* Добавляем собственный маркер для открытого состояния */
@@ -42,27 +43,41 @@ $colorHeadlineText: #f16d7f;
             font-family: "Font Awesome 5 free";
         }
         details ul {
-            width: 138px;
-            height: 406px;
+            width: 150px;
             color: #6f6e6e;
             font-size: 14px;
             font-weight: 400;
             line-height: 33px;
             list-style-type: none;
-            height: 350px;
+            height: fit-content;
+            & li a:visited {
+                color: #6f6e6e;
+            }
+            & li a:hover {
+                cursor: pointer;
+                color: $colorHeadlineText;
+            }
         }
         & summary {
-            position: relative;
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
+            position: relative;
             color: #ef5b70;
             font-size: 14px;
             font-weight: 700;
             line-height: 20px;
             text-transform: uppercase;
+            outline: none;
             & span {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
                 margin-top: 10px;
             }
             .rectangle_menu {
+                display: -webkit-box;
+                display: -ms-flexbox;
                 margin-right: 11px;
                 width: 5px;
                 height: 37px;
@@ -234,6 +249,10 @@ $colorHeadlineText: #f16d7f;
             font-size: 16px;
             font-weight: bold;
             line-height: 26px;
+        }
+        & button:hover {
+            background-color: rgb(255, 164, 164);
+            outline: none;
         }
     }
 }

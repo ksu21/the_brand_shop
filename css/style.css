@@ -19,7 +19,7 @@
   margin-right: 46px;
 }
 
-.logoa:visited {
+.logo a:visited {
   color: #222222;
 }
 
@@ -27,7 +27,7 @@
   opacity: 70%;
 }
 
-.logospan {
+.logo span {
   color: #f16d7f;
   font-weight: 700;
 }
@@ -46,6 +46,10 @@
   font-size: 14px;
 }
 
+.search .dropdown {
+  display: none;
+}
+
 .search__browse {
   padding: 14px;
   background-color: #f9f9f9;
@@ -57,6 +61,7 @@
 
 .search__browse:hover {
   opacity: 70%;
+  cursor: pointer;
 }
 
 .search__browse i {
@@ -575,7 +580,7 @@
 }
 
 .subscribe_copy {
-  background: url(../img/Layer_41.jpg) no-repeat center #ccc;
+  background: url(../img/Layer_41.jpg) no-repeat #ccc;
   height: 438px;
   background-size: cover;
   margin-top: 97px;
@@ -741,6 +746,7 @@
 
 .sub_right button:hover {
   opacity: 70%;
+  cursor: pointer;
 }
 
 .sub_right button:active {
@@ -1057,8 +1063,7 @@
 }
 
 .product_content .menu_left {
-  width: 243px;
-  height: 598px;
+  width: 250px;
   /* Убираем стандартный маркер Chrome */
   /* Убираем стандартный маркер Firefox */
   /* Добавляем собственный маркер для закрытого состояния */
@@ -1067,6 +1072,7 @@
 
 .product_content .menu_left details {
   margin-top: 18px;
+  outline: none;
 }
 
 .product_content .menu_left details summary::-webkit-details-marker {
@@ -1087,6 +1093,7 @@
   position: absolute;
   right: 0px;
   top: 10px;
+  outline: none;
 }
 
 .product_content .menu_left details[open] summary:before {
@@ -1099,33 +1106,49 @@
 }
 
 .product_content .menu_left details ul {
-  width: 138px;
-  height: 406px;
+  width: 150px;
   color: #6f6e6e;
   font-size: 14px;
   font-weight: 400;
   line-height: 33px;
   list-style-type: none;
-  height: 350px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.product_content .menu_left details ul li a:visited {
+  color: #6f6e6e;
+}
+
+.product_content .menu_left details ul li a:hover {
+  cursor: pointer;
+  color: #f16d7f;
 }
 
 .product_content .menu_left summary {
-  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
   color: #ef5b70;
   font-size: 14px;
   font-weight: 700;
   line-height: 20px;
   text-transform: uppercase;
+  outline: none;
 }
 
 .product_content .menu_left summary span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin-top: 10px;
 }
 
 .product_content .menu_left summary .rectangle_menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
   margin-right: 11px;
   width: 5px;
   height: 37px;
@@ -1360,6 +1383,11 @@
   font-size: 16px;
   font-weight: bold;
   line-height: 26px;
+}
+
+.product_content .main_content button:hover {
+  background-color: #ffa4a4;
+  outline: none;
 }
 
 .feature_box_product {
@@ -1651,6 +1679,7 @@ a {
 
 .browse_button:hover {
   opacity: 70%;
+  cursor: pointer;
 }
 
 .browse_button:active {

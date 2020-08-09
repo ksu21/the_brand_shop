@@ -12,18 +12,17 @@ $colorHeadlineText: #f16d7f;
   background-blend-mode: overlay;
   font-size: 27px;
   margin-right: 46px;
-  &a:visited {
+  & a:visited {
     color: #222222;
   }
   &:hover {
     opacity: 70%;
   }
-  &span {
+  & span {
     color: $colorHeadlineText;
     font-weight: 700;
   }
 }
-
 .search {
   height: 38px;
   display: flex;
@@ -32,6 +31,9 @@ $colorHeadlineText: #f16d7f;
   border: 1px solid #e6e6e6;
   overflow: hidden;
   font-size: 14px;
+  .dropdown {
+    display: none;
+  }
 }
 .search__browse {
   padding: 14px;
@@ -42,12 +44,12 @@ $colorHeadlineText: #f16d7f;
   outline: none;
   &:hover {
     opacity: 70%;
+    cursor: pointer;
   }
   & i {
     color: #838383;
   }
 }
-
 .header .search input {
   height: inherit;
   border: none;

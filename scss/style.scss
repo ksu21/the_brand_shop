@@ -199,15 +199,16 @@ a {
   font-weight: 700;
   letter-spacing: 0.4px;
   height: 48px;
-}
-.browse_button:hover {
-  opacity: 70%;
-}
-.browse_button:active {
-  transform: translateY(4px);
-}
-.browse_button i {
-  padding-left: 20px;
+  &:hover {
+    opacity: 70%;
+    cursor: pointer;
+  }
+  &:active {
+    transform: translateY(4px);
+  }
+  & i {
+    padding-left: 20px;
+  }
 }
 .feature {
   height: 529px;
