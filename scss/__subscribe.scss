@@ -1,7 +1,7 @@
 $colorButtonMain: #f16d7f;
 $colorHeadlineText: #f16d7f;
 .subscribe_copy {
-    background: url(../img/Layer_41.jpg) no-repeat center #ccc;
+    background: url(../img/Layer_41.jpg) no-repeat #ccc;
     height: 438px;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -71,7 +71,6 @@ $colorHeadlineText: #f16d7f;
         background-color: $colorButtonMain;
     }
 }
-
 .active_line {
     background-color: $colorButtonMain;
 }
@@ -116,6 +115,7 @@ $colorHeadlineText: #f16d7f;
         }
         &:hover {
             opacity: 70%;
+            cursor: pointer;
         }
         &:active {
             transform: translateY(4px);
